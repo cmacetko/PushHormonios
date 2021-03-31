@@ -1,0 +1,15 @@
+{
+  "name": "pushhormonios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paloma Macetko <cmacetko@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-notifier": "^9.0.1",
+    "node-schedule": "^2.0.0"
+  }
+}
