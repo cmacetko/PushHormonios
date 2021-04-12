@@ -1,9 +1,17 @@
 var schedule = require('node-schedule');
 var notifier = require('node-notifier');
 
-var ObjJob1;
-var ObjJob2;
-var ObjJob3;
+var ObjJob0A;
+var ObjJob0B;
+var ObjJob0C;
+
+var ObjJob1A;
+var ObjJob1B;
+var ObjJob1C;
+
+var ObjJob2A;
+var ObjJob2B;
+var ObjJob2C;
 
 function AbrirNotificacao(Mensagem)
 {
@@ -34,26 +42,74 @@ function AbrirNotificacao(Mensagem)
 function InitCron()
 {
 
-    ObjJob1 = schedule.scheduleJob({hour: 11, minute: 45}, function(){
+
+    ObjJob0A = schedule.scheduleJob({hour: 8, minute: 00}, function(){
 
         console.log('scheduleJob');
-        AbrirNotificacao("PALOMA toma os HORMONIOS");
+        AbrirNotificacao("PALOMA toma os HORMONIOS - Estradiol");
     
     });
 
-    ObjJob2 = schedule.scheduleJob({hour: 12, minute: 20}, function(){
+    ObjJob0B = schedule.scheduleJob({hour: 8, minute: 10}, function(){
+
+        console.log('scheduleJob');
+        AbrirNotificacao("PALOMA tomou os HORMONIOS??");
+    
+    });
+
+    ObjJob0C = schedule.scheduleJob({hour: 8, minute: 20}, function(){
+
+        console.log('scheduleJob');
+        AbrirNotificacao("PALOMA tomou os HORMONIOS??");
+    
+    });
+    
+    
+    ObjJob1A = schedule.scheduleJob({hour: 11, minute: 45}, function(){
+
+        console.log('scheduleJob');
+        AbrirNotificacao("PALOMA toma os HORMONIOS - Estradiol + Acetato");
+    
+    });
+
+    ObjJob1B = schedule.scheduleJob({hour: 12, minute: 20}, function(){
 
         console.log('scheduleJob');
         AbrirNotificacao("PALOMA tomou os HORMONIOS??");
     
     });
 
-    ObjJob3 = schedule.scheduleJob({hour: 12, minute: 30}, function(){
+    ObjJob1C = schedule.scheduleJob({hour: 12, minute: 30}, function(){
 
         console.log('scheduleJob');
         AbrirNotificacao("PALOMA tomou os HORMONIOS??");
     
     });
+
+
+    /*
+    ObjJob2A = schedule.scheduleJob({hour: 19, minute: 10}, function(){
+
+        console.log('scheduleJob');
+        AbrirNotificacao("PALOMA toma os HORMONIOS - Estradiol");
+    
+    });
+
+    ObjJob2B = schedule.scheduleJob({hour: 19, minute: 30}, function(){
+
+        console.log('scheduleJob');
+        AbrirNotificacao("PALOMA tomou os HORMONIOS??");
+    
+    });
+
+    ObjJob2C = schedule.scheduleJob({hour: 19, minute: 50}, function(){
+
+        console.log('scheduleJob');
+        AbrirNotificacao("PALOMA tomou os HORMONIOS??");
+    
+    });
+    */
+
 
 }
 
